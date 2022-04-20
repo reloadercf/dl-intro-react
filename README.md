@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Vamos con react ⚛️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![react](https://user-images.githubusercontent.com/55257833/132106346-fb006a49-558c-49ab-9378-5d600900323d.png)
 
-## Available Scripts
+## Los OA que vimos en la OH
 
-In the project directory, you can run:
+### Antes que nada vamos a la documentación oficial ⚡⚡
 
-### `npm start`
+[https://es.reactjs.org](https://es.reactjs.org)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+__`(💡La recomendación es usar componentes de función)`__
+[https://es.reactjs.org/docs/components-and-props.html](https://es.reactjs.org/docs/components-and-props.html)
 
-### `npm test`
+### Props
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[https://es.reactjs.org/docs/render-props.html](https://es.reactjs.org/docs/render-props.html)
 
-### `npm run build`
+### Desestructuración de objetos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+__Ejemplo:__
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```js
+const user = {
+    id: 42,
+    is_verified: true
+};
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const {id, is_verified} = user;
 
-### `npm run eject`
+console.log(id); // 42
+console.log(is_verified); // true
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Documentación oficial de la desestructuración de objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Bonus otros recursos💥💥
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Videos de REACT
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![REACT ⚛️ CURSO Práctico DESDE CERO - Desarrolla una app con React.js PASO A PASO](https://i3.ytimg.com/vi/4AFOCAgywLc/hqdefault.jpg)](https://youtu.be/4AFOCAgywLc)
 
-## Learn More
+[![Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)](https://i3.ytimg.com/vi/T_j60n1zgu0/hqdefault.jpg)](https://youtu.be/T_j60n1zgu0)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![React ⚛️: Estado del componente, Renderizado Condicional y Eventos - Bootcamp FullStack Gratuito](https://i3.ytimg.com/vi/5KvlQDYDZwY/hqdefault.jpg)](https://youtu.be/5KvlQDYDZwY)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Tutorial de React Router 6 desde cero](https://i3.ytimg.com/vi/iPNt12IdbCU/hqdefault.jpg)](https://youtu.be/iPNt12IdbCU)
