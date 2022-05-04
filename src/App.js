@@ -1,19 +1,29 @@
+import { useState } from 'react';
 import './App.css';
+import Paths from './components/Paths';
+import {
+  BrowserRouter,
+} from "react-router-dom";
+// import your route components too
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-import Character from './components/Character/Character';
 
-import Data from './Data.js'
-
+  
 function App() {
+  const [isAutenticate, setAutenticate]=useState(null)
+  const auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      setAutenticate(user)
+    } else {
+      setAutenticate(null)
+    }
+  });
   return (
-    <div className="App">
-     <h1>Welcome to Datalovers with react</h1>
-     <div className='container-character'>
-       {Data.results.map(unpersonaje=>
-       <Character todaslaspropiedades={unpersonaje} key={unpersonaje.id} />
-     )}
-     </div>
+    <div>
+      <BrowserRouter><Paths isAutenticate={isAutenticate} /></BrowserRouter>
     </div>
+     
   );
 }
 
